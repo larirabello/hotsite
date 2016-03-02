@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    color: #fff;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 116, 42, 0.48);/* rgba(160, 123, 45, 0.48); */
+}
+
+
+/* DEFINIÇÃO DAS FONTES */
+
+h1, h2, h3, h4, h5, h6 {  /* VERIFICAR SE USO, SENÃO APAGAR */
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+ /*section,aside,div,footer {
+    background: url(../image/fundo.png);
+} */
+
+/*QUE ISSO? */
+@media(min-width:768px) {
+    p {
+        margin: 0 0 25px;
+        font-size: 25px;
+        line-height: 1.6;
+        color: #f4f1f1;
+    }
+}
+
+a {
+    color: rgb(204, 99, 99);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: rgb(152, 75, 75); /* verde de antes #1d9b6c; */
+}
+
+
+/* LOGO DO HEADER */
+
+.logo {
+    width:17em;
+    float:left;
+}
+
+
+/* POSICIONAMENTO E DEFINIÇÃO DO MENU */
+
+ul li {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    margin-left: 100px;
+    line-height: 10px;
+}
+
+.menu-position {
+    right: 100px;
+}
+
+.menu-texto {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.2em;
+    color: rgb(204, 99, 99);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f5cbcb;
+}
+
+nav.cbclo {
+    float: right;
+    margin-right: 10em;
+    margin-top: 2em;
+}
+  
+
+.superior {
+    line-height: 0px;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    background: rgba(51, 43, 32, 0.9);/*rgba(28,38,47,.9);*/
+}
+
+/* IMAGEM NA PG PRINCIPAL */
+
+.tittle {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../image/banda5.png) no-repeat center scroll;
+    background-color: rgba(90, 86, 86, 0.63);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.tittle .tittle2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* DEFINIÇÃO DA FONTE NO TEXTO DA PAGINA PRINCIPAL "RHCP" e botões */
+
+.tittle .tittle2 .tittlerhcp {
+    margin-top: 200px;
+    color: rgb(199, 66, 66);
+    font-family:  Montserrat,'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*font-family: 'Shadows Into Light', cursive; */
+    font-size: 40px;
+}
+
+.tittle .tittle .textosuperior {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .tittle {
+        height: 100%;
+        padding: 0;
+    }
+
+    .tittle .tittle2 .tittlerhcp {
+        font-size: 100px;
+    }
+    /* título RHCP na primeira página */
+    .tittle .tittle2 .tittlerhcp {
+        font-size: 70px;
+    }
+    .tittlerhcp {
+        font-size: 150px;
+}
+
+/* PARA O TEXTO DA HASHTAG - acima da tabela de Agenda  */
+
+.hashtag {
+    font-size: 5em;
+    background-image: url("../image/fundo.png");
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    /*border-top: 5px solid #7b6565;*/  /* Faz uma bordinha na parte de cima */
+}
+
+
+/* POSICIONAMENTO DA TABELA */
+
+.texto-subtitulo {
+    padding-top: 20px;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+.texto-paragrafo {
+    margin-left: 19%;
+    margin-bottom: 3.2%;
+}
+
+.posicao-tabela {
+    position: relative;
+    margin-left: 12%; /* tava 5% */
+} 
+
+td {
+    width: 10%;
+    font-family: sans-serif; /* trocar */
+    color:#646464; /*cor das fontes da tabela */
+}
+
+tr {
+    background-color: #deaeae;
+    border: 1px solid #797979;
+}
+
+
+/* GALERIA DE FOTOS */
+
+.galeria {
+    margin: 0;
+    padding:0;
+    left: 0px;
+    display: inline-block;
+}
+
+.galeria-imagem {
+    width: 20em; /* estava 17em*/
+    height: 17em;
+}
+ 
+.galeria-fundo {
+    background-image: url("../image/fundo.png");
+    padding-bottom: 3%;
+    
+}
+    
+
+/* CSS DO PARTICIPE */
+
+.participe {
+    float: left;
+    width: 50%;
+    /* background-color: rgba(244, 214, 219, 0.26); */
+    padding: 10px;
+    margin: 5% 1% 5% 2%;
+    
+}
+
+
+/* CSS do formulário */
+
+.cadastro {
+    position:relative;
+    float: right;
+    /* text-align: center; */
+    width: 40%;
+    /* background-color: rgba(244, 214, 219, 0.26); */
+    margin: 5% 1% 5% 4%;
+    padding-bottom: 3%;
+}
+
+
+/* Fonte menor  */
+
+.font-smaller {
+    font-size: 1.3em;
+}
+
+/* Rodapé */
+
+footer {
+    clear: both;
+    text-align: center;
+    border-top: 1px solid #000;
+}
+
+/* Código para os BOTÕES */
+
+.botao {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.botao-default {
+    border: 1px solid rgb(204, 99, 99);
+    color: rgb(204, 99, 99);
+    background-color: transparent;
+}
+
+.botao-default:hover,
+.botao-default:focus {
+    border: 1px solid rgb(204, 99, 99);
+    outline: 0;
+    color: #000;
+    background-color: rgb(204, 99, 99);
+}
+
+.assine {
+    margin: 10px 5px 5px 5px;
+}
+
+    
+h1 {
+    font-size: 40px;
+}
