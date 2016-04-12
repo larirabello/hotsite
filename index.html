@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head> 
+    <head>
         <meta charset="utf-8">
         <title> Turnê Red Hot Chili Peppers </title>
         <!-- Linkando o Bootstrap  -->
         <link href="css/bootstrap.css" rel="stylesheet">
-        <!-- Linkando o  CSS -->        
+        <!-- Linkando o  CSS -->
         <link rel="stylesheet" href="css/style.css">
-        <!-- Fontes online -->   
+        <!-- Fontes online -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Shadows+Into+Light|PT+Sans+Narrow|Montserrat' rel='stylesheet' type='text/css'>
         <!-- Tabela -->
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
@@ -16,14 +16,19 @@
         <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         <!-- BARRA DE NAVEGAÇÃO/MENU -->
         <header class="superior">
-            <a href="index.html"><img class="logo" alt="logo" src="image/logo.png"/></a>
-            <nav class="cbclo">
-                <ul>
-                    <li> <a class="menu-texto page-scroll" href="#intro">No Brasil</a></li>
-                    <li> <a class="menu-texto page-scroll" href="#agenda">Agenda</a></li>
-                    <li> <a class="menu-texto page-scroll" href="#cadastro">Cadastro</a></li>
-                </ul> 
-            </nav>
+            <div class="row">
+              <div class="col-xs-12">
+                <nav>
+                    <a href="index.html"><img class="logo" alt="logo" src="image/logo-rhcp.png"/></a>
+                    <ul class="pull-right">
+                        <li class="down-menu"> <a class="menu-texto page-scroll" href="#intro">No Brasil</a></li>
+                        <li> <a class="menu-texto page-scroll" href="#agenda">Agenda</a></li>
+                        <li> <a class="menu-texto page-scroll" href="#cadastro">Cadastro</a></li>
+                    </ul>
+                </nav>
+              </div>
+            </div>
+
         </header>
         <!-- PRIMEIRA PÁGINA - INTRODUÇÃO/HOME -->
         <article class="tittle">
@@ -33,86 +38,90 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 id="intro" class="tittlerhcp">RHCP</h1>
                         <p class="textosuperior">Saiba tudo sobre a passagem do Red Hot Chili Peppers no Brasil!</p>
-                        <p>Uma das bandas mais aclamadas pelo público brasileiro volta para o país numa série de apresentações que envolvem diversos Estados. Aqui você fica por dentro de todas as informações necessárias para fazer parte dessa turnê que ficará para a história! </p>
+                        <p>Uma das bandas mais aclamadas pelo público brasileiro volta ao país numa série de apresentações que envolvem diversos Estados. Aqui você fica por dentro de todas as informações necessárias para fazer parte dessa turnê que ficará para a história! </p>
                         <a href="#agenda" class="botao botao-default btn-lg page-scroll"> Saiba mais...</a>
                        <!-- <a href="#agenda" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i> 
+                            <i class="fa fa-angle-double-down animated"></i>
                         </a> -->
                     </div>
                 </div>
             </div>
         </div>
-        </article>        
-        <!-- SECTION TABELA -->
-        <section id="agenda"> 
-            <section class="hashtag">
-                <h3> #RHCPnoBrasil</h3>
-                <p>Aqui você encontrará tudo o que precisa saber para curtir o melhor show da sua vida!</p>
+        </article>
+        <div class="row">
+          <div class="col-xs-12">
+            <section id="agenda">
+                <section class="hashtag">
+                    <h3> #RHCPnoBrasil</h3>
+                    <p>Aqui você encontrará tudo o que precisa saber para curtir o melhor show da sua vida!</p>
+                </section>
+                <h2 class="texto-subtitulo"> Agenda</h2>
+                <p class="texto-paragrafo"> Saiba as datas e os locais das apresentações marcadas do #RHCPnoBrasil.</p>
+               <table class="pure-table posicao-tabela">
+                    <thead>
+                        <tr>
+                            <th>DATA</th>
+                            <th>LOCAL</th>
+                            <th>HORÁRIO</th>
+                            <th>TICKETS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="pure-table-odd">
+                            <td>02/10</td>
+                            <td>São Paulo</td>
+                            <td>20h</td>
+                            <td><a href=#>Link</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>03/10</td>
+                            <td>Rio de Janeiro</td>
+                            <td>21h</td>
+                            <td><a href=#>Link</a></td>
+                        </tr>
+
+                        <tr class="pure-table-odd">
+                            <td>09/10</td>
+                            <td>Belo Horizonte</td>
+                            <td>21h</td>
+                            <td><a href=#>Link</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>17/10</td>
+                            <td>Curitiba</td>
+                            <td>21h</td>
+                            <td><a href=#>Link</a></td>
+                        </tr>
+
+                        <tr class="pure-table-odd">
+                            <td>18/10</td>
+                            <td>Porto alegre</td>
+                            <td>20h</td>
+                            <td><a href=#>Link</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>21/10</td>
+                            <td>Recife</td>
+                            <td>19h</td>
+                            <td><a href=#>Link</a></td>
+                        </tr>
+
+                        <tr class="pure-table-odd">
+                            <td>22/10</td>
+                            <td>Salvador</td>
+                            <td>20h</td>
+                            <td><a href=#>Link</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-            <h2 class="texto-subtitulo"> Agenda</h2>
-            <p class="texto-paragrafo"> Saiba as datas e os locais das apresentações marcadas do #RHCPnoBrasil.</p>
-           <table class="pure-table posicao-tabela">
-                <thead>
-                    <tr>
-                        <th>DATA</th>
-                        <th>LOCAL</th>
-                        <th>HORÁRIO</th>
-                        <th>TICKETS</th>
-                    </tr>
-                </thead>
+          </div>
+        </div>
 
-                <tbody>
-                    <tr class="pure-table-odd">
-                        <td>02/10</td>
-                        <td>São Paulo</td>
-                        <td>20h</td>
-                        <td><a href=#>Link</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>03/10</td>
-                        <td>Rio de Janeiro</td>
-                        <td>21h</td>
-                        <td><a href=#>Link</a></td>
-                    </tr>
-
-                    <tr class="pure-table-odd">
-                        <td>09/10</td>
-                        <td>Belo Horizonte</td>
-                        <td>21h</td>
-                        <td><a href=#>Link</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>17/10</td>
-                        <td>Curitiba</td>
-                        <td>21h</td>
-                        <td><a href=#>Link</a></td>
-                    </tr>
-
-                    <tr class="pure-table-odd">
-                        <td>18/10</td>
-                        <td>Porto alegre</td>
-                        <td>20h</td>
-                        <td><a href=#>Link</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>21/10</td>
-                        <td>Recife</td>
-                        <td>19h</td>
-                        <td><a href=#>Link</a></td>
-                    </tr>
-
-                    <tr class="pure-table-odd">
-                        <td>22/10</td>
-                        <td>Salvador</td>
-                        <td>20h</td>
-                        <td><a href=#>Link</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section> 
             <!-- PÁGINA DE CADASTRO -->
         <section class="galeria-fundo" id="cadastro">
             <h2 class="texto-subtitulo">A banda e suas últimas Apresentações</h2>
@@ -138,8 +147,8 @@
                     <p class="font-smaller">Não será permitido acesso ao evento portando: máquina fotográfica, garrafa plástica, copo de vidro e materiais perfurantes.</p>
                     <h4> Há a possibilidade de shows extras?</h4>
                     <p class="font-smaller">Não há a confirmação de datas extras, devido à boa quantidade de shows marcados. Não é sempre que podemos presenciar a banda em quase todas as regiões do país, então não perca a oportunidade!</p>
-                
-            </section> 
+
+            </section>
             <!-- ASIDE FORMULÁRIO -->
             <aside>
                 <form class="pure-form pure-form-aligned cadastro">
@@ -174,14 +183,14 @@
                              <br><a href="#" class="botao botao-default btn-lg">Cadastrar meu E-mail</a>
                         </div>
                     </fieldset>
-                </form> 
-            </aside>            
-        </section>            
+                </form>
+            </aside>
+        </section>
     <!-- rodapé simples-->
-        <footer> 
+        <footer>
         <p class="font-smaller">Desenvolvimento Beatriz e Larissa - 2015</p>
         </footer>
-            
+
         <script src="js/jquery.js"></script>
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/hotsite.js"></script>
