@@ -70,7 +70,9 @@ a:focus {
     float:left;
 }
 
-
+.down-menu {
+  margin-top: 10%;
+}
 /* POSICIONAMENTO E DEFINIÇÃO DO MENU */
 
 ul li {
@@ -101,7 +103,7 @@ nav.cbclo {
     margin-right: 10em;
     margin-top: 2em;
 }
-  
+
 
 .superior {
     line-height: 0px;
@@ -192,8 +194,8 @@ nav.cbclo {
 
 .posicao-tabela {
     position: relative;
-    margin-left: 12%; /* tava 5% */
-} 
+    margin: 0 auto; /* tava 5% */
+}
 
 td {
     width: 10%;
@@ -220,13 +222,13 @@ tr {
     width: 20em; /* estava 17em*/
     height: 17em;
 }
- 
+
 .galeria-fundo {
     background-image: url("../image/fundo.png");
     padding-bottom: 3%;
-    
+
 }
-    
+
 
 /* CSS DO PARTICIPE */
 
@@ -236,7 +238,7 @@ tr {
     /* background-color: rgba(244, 214, 219, 0.26); */
     padding: 10px;
     margin: 5% 1% 5% 2%;
-    
+
 }
 
 
@@ -297,7 +299,11 @@ footer {
     margin: 10px 5px 5px 5px;
 }
 
-    
+
 h1 {
     font-size: 40px;
+}
+
+.btn-lg {
+  font-size: 12px;
 }
